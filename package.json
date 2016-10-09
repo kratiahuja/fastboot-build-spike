@@ -19,7 +19,12 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "amd-name-resolver": "0.0.6",
     "broccoli-asset-rev": "^2.4.2",
+    "broccoli-babel-transpiler": "^5.4.5",
+    "broccoli-concat": "^2.3.8",
+    "broccoli-funnel": "^1.0.7",
+    "broccoli-source": "^1.1.0",
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.8.0",
     "ember-cli-app-version": "^1.0.0",
@@ -39,6 +44,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.1",
+    "escape-string-regexp": "^1.0.3",
     "loader.js": "^4.0.1"
   }
 }
