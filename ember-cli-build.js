@@ -9,6 +9,9 @@ var escapeRegExp = require('escape-string-regexp');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
+    fingerprint: {
+      generateAssetMap: true
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -25,7 +28,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   // Experimental fastboot build spike
-  var fastbootTree = new Funnel('fastboot-app', {
+  /*var fastbootTree = new Funnel('fastboot-app', {
     srcDir: '/',
     destDir: app.name,
     annotation: 'Funnel: Fastboot App JS Files'
@@ -42,7 +45,7 @@ module.exports = function(defaults) {
   var finalFastbootTree = Concat(es5, {
     outputFile: '/assets/' + app.name + '-fastboot.js',
     annotation: 'Concat: Fastboot App'
-  });
+  });*/
 
-  return app.toTree(finalFastbootTree);
+  return app.toTree();
 };
